@@ -1,6 +1,7 @@
 import requests
+import key
 
-TOKEN = ''
+TOKEN = key.TOKEN
 
 
 # rest = requests.get(f"https://api.telegram.org/bot{TOKEN}/getUpdates")
