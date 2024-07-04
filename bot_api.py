@@ -13,6 +13,6 @@ TOKEN = key.TOKEN
 # print(rest.text)
 
 
-# rest = requests.get('https://api.telegram.org/bot' + TOKEN + '/' + 'getUpdates')
-# for update in rest.json()['result']:
-#     print(update['update_id'], update['message']['message_id'], 'text: ', update['message']['text'])
+rest = requests.get('https://api.telegram.org/bot' + TOKEN + '/' + 'getUpdates')
+for update in rest.json()['result']:
+    print(update['update_id'], update['message']['message_id'], 'text: ', update['message']['text'])
