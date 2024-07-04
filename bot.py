@@ -1,6 +1,6 @@
 from telegram.ext import Updater, CommandHandler
 
-updater = Updater(token='1881218661:AAFcllZI3Kf4ivPKlpmUFtC6Zfo88_GbBGc')
+updater = Updater(token='')
 
 
 def start(update, context):
