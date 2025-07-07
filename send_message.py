@@ -1,12 +1,14 @@
 import types
 
 import requests
-from telegram import InlineKeyboardMarkup, InlineKeyboardButton
+# from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 
-import key
+# import key
 import time
 
-TOKEN = key.TOKEN
+# TOKEN = key.TOKEN
+TOKEN = ""
+
 base_url = f'https://api.telegram.org/bot{TOKEN}/sendMessage'
 
 # check_btn = InlineKeyboardMarkup(row_width=1)
@@ -39,16 +41,14 @@ chat_ids = ['-1002481531999', '-1002152186194']
 #     response = requests.get(base_url, data=parameters)
 #     print(response.text)
 
+TOKEN = "5356590968:AAGBMDJ-y6RX-3Ts1H_YgVQH35HEdqHWv38"
 
-url = f"https://api.telegram.org/bot{TOKEN}/editMessageMedia"
+url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 payload = {
-    "chat_id": chat_ids[0],
-    "message_id": 11,
-    "media": {
-        "type": "photo",
-        "media": "https://tsdi.uz/assets/images/slider/stom.jpg"
-    },
+    "chat_id": '7759697535',
+    'text': "Assalomu alaykum! \nHurmatli foydalanuvchi (Yulduz). Sizning murojaatingiz yetib keldi."
 }
 
 response = requests.post(url, json=payload)
 print(response.json())
+
